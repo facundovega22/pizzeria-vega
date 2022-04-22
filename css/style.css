@@ -31,6 +31,14 @@
     
     
   }
+  .animacionnav:hover{
+    animation-name:none;
+   animation-duration: 5s;
+   font-size: 25px;
+   background-color: #ffffff;
+   color: #000;
+  }
+
  
   
   /*imagenes*/
@@ -69,7 +77,22 @@
     .footer{
       color: #1847e0;
     }
-
+    .footer:hover{ 
+      color: #3b5998;
+      background-image: linear-gradient( to bottom, transparent 20%, white 40%, white 95%, transparent 93% );
+      animation: backwards;
+      animation-duration: 2s;
+    }
+    
+    
+    .footer__1{color: rgb(30, 212, 39);}
+    .footer__1:hover{ 
+      background-image: linear-gradient( to bottom, transparent 10%, white 0%, #25d366 95%, transparent 93% );
+       }
+    
+    .footer__2{color: rgb(167, 0, 139);}
+    .footer__2:hover{ background-image: linear-gradient( to bottom, transparent 10%, rgba(243, 229, 39, 0.63) 0%, #e948cee1 95%, transparent 93% ); }
+  
   /*nose que es*/ 
     .centrar a 
     {
