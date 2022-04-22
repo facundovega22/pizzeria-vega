@@ -1,0 +1,394 @@
+*{ 
+    margin: 0%;
+    padding: 0%;
+  }
+  
+    /*titulos*/
+  .titulo 
+  {
+    font-family: "Bebas Neue", cursive;
+    text-align: center;
+    color: beige;
+    font-size: 80px;
+    
+  }
+  .subtitulo 
+  {
+    font-family: "Fjalla One", sans-serif;
+    color: rgb(0, 255, 255);
+    text-align: center;
+    font-size: 20px;} 
+  
+  /*horizontal-navegacion*/
+  
+  #lista li 
+  {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    padding: 5px;
+    background-color: #000;
+    
+    
+  }
+ 
+  
+  /*imagenes*/
+  .scroll{ display: flex; 
+    justify-content: center;
+    margin-top: 15px;
+   
+   
+  }
+  /*maps*/
+  .ubicacion 
+  {
+    font-family: Georgia, "times geogia", Times, serif;
+    color: #883eff;
+    margin:0px;
+  }
+  /*footer*/
+  .modificarlista li
+  { 
+    display: flex;
+    justify-content: space-around;
+    color: #000;
+   background-image:url("../assents/imagenes/fondopizzafooter.jpg")  ;
+   background-repeat: no-repeat;
+   background-size:cover;
+   background-position: center;
+  
+  }
+  
+  
+  .contactofooter{display:flex;
+    justify-content: center;
+    color: red;
+    font-size: 20px;}
+   
+    .footer{
+      color: #1847e0;
+    }
+
+  /*nose que es*/ 
+    .centrar a 
+    {
+      display: inline;
+      text-align: center;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.651);
+    line-height: 0%;
+    text-align: center;
+  }
+  /*sombras promo*/
+  .promo 
+  {
+    box-shadow: 10px 10px 20px 0px #000;
+    margin-top: 10px;
+  }
+  /*nombre ubicacion*/
+  .direcciondemaps 
+  {
+    color: aqua;
+    text-align: left;
+    font-family: "Bebas Neue", cursive;
+    text-shadow: 5px 5px 20px black;
+    padding-left: 260px;
+  }
+  /*tablas*/
+  .tablas
+  {
+    color: #ffffff;
+    border-color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin:auto; text-align: center;
+    margin-top: 10px;
+    
+  }
+  /*socio cliente*/
+  .sociocliente
+  { 
+  background-color: #ffffff;
+  width: 800px;
+  height: 300px;
+  border : 10px solid black;
+  margin:auto;
+  margin-top: 20px;
+  border-style: double;
+  }
+  .nya{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 5px;
+    font-family: 'Rubik Glitch', cursive;
+    font-size: 15px;
+  }
+  .doc{
+    display: flex;
+    justify-content: space-around;
+    margin-top:60px ;
+    font-family: 'Rubik Glitch', cursive;
+    font-size: 15px;
+  }
+  .tyc{display:flex;
+    justify-content: flex-start;
+    padding-left: 30px;
+    margin-top: 50px;
+  }
+  .enviar{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+  }
+  
+  .botones
+  { padding: 5px;
+    background-color: #76dddd;
+    
+   }
+    .subtitulooo
+    {
+      font-family: "Fjalla One", sans-serif;
+      color: rgb(255, 30, 30);
+      text-align:left;
+      text-shadow: 2px 2px 25px rgb(0, 0, 0);
+  
+    }
+    /*quienes somos*/
+   .quienessomos { display: flex;
+    justify-content: center;
+    border:1px solid black ;
+    background-color: #5a1f1f;
+    position: relative;
+    color: #adaf47;
+   }
+   .quienessomos__1{
+     display: flex;
+     justify-content: flex-end;
+     justify-content: center;
+     background-color: #be2148;
+    position:sticky;
+    color: #ffffff;
+   }
+  .colorreceta{
+    display: flex;
+    margin-top: 20px;
+    padding-left: 10px;
+    color:antiquewhite;
+    font-size: 30px ;
+  }
+  .colorletra{
+    display: flex;
+    margin-top: 20px;
+    padding-left: 10px;
+    color: #adaf47;
+    font-size: 30px;
+  }
+  .separador{
+    display: flex;
+    padding-left: 5px;
+    border: 10px solid black;
+    border-style: double;
+  }
+  .separador__1{
+    display: flex;
+    padding-left: 5px;
+    border: 10px solid black;
+    border-style: double;
+  }
+  .indexstr{
+    display: grid;
+    grid-template-columns: (4,1fr);
+    grid-template-rows:110px 10px auto auto ;
+    grid-template-areas: "header header header header"
+                          "nav nav nav nav"
+                          "main main main main"
+                          "footer footer footer footer";
+   row-gap: 30px; 
+   background: #272323;
+  }
+   .header{
+     grid-area: header;
+     background: #272323;
+   }
+  
+   .nav{
+     grid-area: nav;
+     background: #272323;
+   }
+  
+   .main{
+     grid-area: main;
+     background: #272323;
+  }
+  .pie{
+    grid-area: footer;
+    background: #272323;
+  }
+  /*media index tablet*/
+  
+  @media only screen and (max-width:768px){
+    .indexstr{
+      display: grid;
+      grid-template-columns: (4,1fr);
+      grid-template-rows: 50px 30px auto auto ;
+      grid-template-areas: "header header header "
+                            "nav nav nav nav"
+                            "main main main "
+                            "footer footer footer ";
+     row-gap: 30px; 
+     background: #272323;
+    }
+     .header{
+       grid-area: header;
+       background: #272323;
+     }
+    
+     .nav{
+       grid-area: nav;
+       background: #272323;
+     }
+    
+     .main{
+       grid-area: main;
+       background: #272323;
+    }
+    .pie{
+      grid-area: footer;
+      background: #272323;
+  
+  }
+  
+  .scroll{ display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     justify-content: center;
+    
+  }
+  .titulo 
+  {
+    font-family: "Bebas Neue", cursive;
+    text-align: center;
+    color: beige;
+    font-size: 40px;
+    
+  }
+  .subtitulo 
+  {
+  display: none;
+    
+  }
+  .sociocliente
+  { 
+  background-color: #ffffff;
+  width: 600px;
+  height: 300px;
+  border : 10px solid black;
+  margin:auto;
+  margin-top: 20px;
+  border-style: double;
+  
+  }
+  .nya{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 5px;
+    font-family: 'Rubik Glitch', cursive;
+    font-size: 15px;
+  }
+  .doc{
+    display: flex;
+    justify-content: space-around;
+    margin-top:60px ;
+    font-family: 'Rubik Glitch', cursive;
+    font-size: 15px;
+  }
+  .tyc{display:flex;
+    justify-content: flex-start;
+    padding-left: 30px;
+    margin-top: 50px;
+  }
+  .enviar{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+  }
+  
+  .botones
+  { padding: 5px;
+    background-color: #76dddd;
+  
+  }
+  
+  /*media index mobile*/
+  @media only screen and (max-width:320px) {
+    
+    .indexstr{
+      display: grid;
+      grid-template-columns: (4,1fr);
+      grid-template-rows: 40px 10px auto auto ;
+      grid-template-areas: "header header header "
+      "nav nav nav "
+      "main main main "
+      "footer footer footer ";
+      row-gap: 30px; 
+      background: #272323;
+    }
+    .header{
+      grid-area: header;
+       background: #272323;
+      }
+    
+      .nav{
+       grid-area: nav;
+       background: #272323;
+     }
+     
+     .main{
+       grid-area: main;
+       background: #272323;
+      }
+      .pie{
+        grid-area: footer;
+        background: #272323;
+  
+  }
+  .scroll{ display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+    
+  }
+  .titulo 
+  {
+    font-family: "Bebas Neue", cursive;
+    text-align: center;
+    color: beige;
+    font-size: 40px;
+    
+  }
+  .subtitulo 
+  {display: none;}
+  
+  .mapa{height: 300px;
+    width: 300px;
+  }
+  .ubicacion
+  {
+    font-size: 15px;
+  }
+  #lista li 
+  {
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    padding: 5px;
+    background-color: #000;}
+    
+    .tablas{display: flex;
+      flex-direction: row;
+     
+    color: #ffffff;
+    border-color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 10px;}}}
